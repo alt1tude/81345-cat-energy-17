@@ -1,0 +1,28 @@
+.page-header {
+  width: 280px;  // width 280, при 320 контент не ужимается
+  margin: 0 auto;
+  margin-top: 12px;
+  padding-left: 20px;  //Не забыть задать вопрос Мурату,
+  padding-right: 20px; //про ширину и паддинги в header и main
+
+  display: flex;
+  flex-direction: column;
+
+  outline: 1px solid black;
+}
+
+.page-header__logo {
+  margin-top: 10px;
+  // margin-bottom: 16px;
+  margin-right: 80px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+

@@ -1,0 +1,112 @@
+.advantages {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  outline: 1px solid black;
+}
+
+.advantages__title {
+  color: @black;
+  font-family: @font-family--base;
+  font-style: normal;
+  font-weight: @font-weight--base;
+  font-size: @font-size--h2mobile;
+  line-height: @line-height--h2base;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 80px;
+  margin-bottom: 20px;  //Двигает .example
+  position: relative;
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;  //Пока убрал для .example
+}
+
+.advantages__item::before {
+  content: "";
+
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 2px;
+  left: 0;
+  background-color: @green;
+}
+
+.advantages__item--vitamins::after {
+  content: "";
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 6px;
+  left: 4px;
+
+  background-image: url(../img/advantage-leaf@1x.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages__item--powder::after {
+  content: "";
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 6px;
+  left: 4px;
+
+  background-image: url(../img/advantage-powder@1x.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages__item--dining::after {
+  content: "";
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 6px;
+  left: 4px;
+
+  background-image: url(../img/advantage-dining@1x.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages__item--clock::after {
+  content: "";
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 6px;
+  left: 4px;
+
+  background-image: url(../img/advantage-clock@1x.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages__description {
+  font-family: @font-family--base;
+  font-style: normal;
+  font-weight: @font-weight--base;
+  font-size: @font-size--mobile;
+  line-height: @line-height--mobile;
+  margin: 0;
+  padding: 0;
+}
