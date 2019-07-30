@@ -11,18 +11,23 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" width="33" height="38" src="img/logo-mobile.svg" alt="Cat Energy">
+      <img class="page-header__logo-image" width="192" height="38" src="img/logo-mobile.svg" alt="Cat Energy">
     </a>
     <nav class="main-nav">
-      <!-- <img class="main-nav_logo" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy"> -->
-      <div class="main-nav_wrapper">
+      <button class="main-nav__toggle" type="button">
+        <svg class="main-nav__toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+          <rect y="16" width="24" height="2"/>
+          <rect y="8" width="24" height="2"/>
+          <rect width="24" height="2"/>
+        </svg><span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrap">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active"><a>Главная</a></li>
           <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
           <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
         </ul>
-      <div>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
     </nav>
   </header>
   <main class="page-main">
@@ -87,12 +92,12 @@
         -->
     </section>
     <section class="address-map">
-      <div class="address-map__info info">
-        <p class="info__title">Приглашаем к сотрудничеству диллеров!</p>
-        <p class="info__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="address-map__info map-info">
+        <p class="map-info__title">Приглашаем к сотрудничеству диллеров!</p>
+        <p class="map-info__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="address-map__container">
-        <iframe class="address-map__container-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003426!2d30.320858716506077!3d59.93871916905364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564242302315!5m2!1sru!2sru" allowfullscreen></iframe>     
+        <iframe class="address-map__container-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003426!2d30.320858716506077!3d59.93871916905364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564242302315!5m2!1sru!2sru" allowfullscreen></iframe>
       </div>
     </section>
   </main>

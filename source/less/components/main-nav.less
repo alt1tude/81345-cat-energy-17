@@ -1,0 +1,32 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__wrap {
+  // position: relative;
+  // z-index: 1;
+  overflow: hidden;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -44px;
+  right: -16px;
+  width: 92px;
+  height: 44px;
+  border: none;
+  background: none;
+  // background-image: url("../img/icon-mobile-menu.svg");
+  // padding: 14px 24px;
+
+  &-icon {
+  fill: #000000;
+  }
+
+  &:hover + .main-nav__wrap .main-nav__list {
+  height: 208px;
+  transform: translateY(0);
+  }
+}

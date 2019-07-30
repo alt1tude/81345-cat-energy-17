@@ -1,15 +1,139 @@
 .catalog {
-
-  outline: 1px solid black;  
+  // padding-left: 20px;
+  // padding-right: 20px;
+  border: 1px solid @bg--lightgrey;
 }
 
 .catalog__list {
   list-style: none;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 .catalog__item {
-  outline: 1px solid black;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid @bg--lightgrey;
+
+  &:last-child {
+  border-bottom: none;
+  }
+
+  &-link {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  display: flex;
+  justify-content: flex-start;
+  }
+
+  & .item-link__title {
+  color: @black;
+  font-family: @font-family--base;
+  font-style: normal;
+  font-weight: @font-weight--base;
+  font-size: @font-size--base;
+  text-transform: uppercase;
+  line-height: 20px;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  }
+
+  &-link--all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  }
+
+  &--intro {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: @font-weight--base;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+  text-align: center;
+  }
 }
 
+.catalog-description {
+  width: 140px;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+
+  & tbody {
+  display: flex;
+  flex-direction: column;
+  }
+
+  & tr {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  &__field,
+  &__value {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: @font-weight--base;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  }
+}
+
+.item-link__image--all {
+  margin-bottom: 26px;
+}
+
+.item-link__title--all {
+  color: @black;
+  font-family: @font-family--base;
+  font-style: normal;
+  font-weight: @font-weight--base;
+  font-size: @font-size--base;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.catalog__order {
+  color: @white;
+  font-family: @font-family--base;
+  font-style: normal;
+  font-weight: @font-weight--base;
+  font-size: @font-size--base;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: @green;
+}
+
+.catalog__view--all {
+  font-family: @font-family--base;
+  font-style: normal;
+  font-weight: @font-weight--base;
+  font-size: @font-size--base;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: @bg--lightgrey;
+}

@@ -10,20 +10,24 @@
 
 <body>
   <header class="page-header">
-    <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" width="33" height="38" src="img/logo-mobile.svg" alt="Cat Energy">
+      <img class="page-header__logo-image" width="192" height="38" src="img/logo-mobile.svg" alt="Cat Energy">
     </a>
     <nav class="main-nav">
-      <!-- <img class="main-nav_logo" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy"> -->
-      <div class="main-nav_wrapper">
+      <button class="main-nav__toggle" type="button">
+        <svg class="main-nav__toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+          <rect y="16" width="24" height="2"/>
+          <rect y="8" width="24" height="2"/>
+          <rect width="24" height="2"/>
+        </svg><span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrap">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
           <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
           <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
         </ul>
-      <div>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
     </nav>
   </header>
   <!-- БУДУТ ДАЛЬШЕ БЛОКИ ПО ЗАДАНИЯМ  -->
