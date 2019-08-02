@@ -1,3 +1,123 @@
-.additionally {
+.additionally__title {
+  color: @black;
+  font-family: @font-family--base;
+  font-style: normal;
+  font-weight: @font-weight--base;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  // padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 32px;
+  position: relative;
 
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 53px;
+    height: 3px;
+    top: 50%;
+    right: -20px;
+    background-color: @green;
+  }
 }
+
+.additionally {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &__catalog {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    // padding-left: 20px;
+    // padding-right: 20px;
+  }
+}
+
+.additionally__item {
+  border-top: 1px solid @bg--lightgrey;
+  padding-top: 15px;
+
+  &-title {
+    color: @black;
+    font-family: @font-family--base;
+    font-style: normal;
+    font-weight: @font-weight--base;
+    font-size: @font-size--base;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid @bg--lightgrey;
+    margin-bottom: 40px;
+  }
+}
+
+.additionally__description {
+  width: 100%;
+  margin-bottom: 14px;
+
+  & tr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-field,
+  &-value {
+    color: @black;
+    font-family: @font-family--base;
+    font-style: normal;
+    font-weight: @font-weight--base;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.additionally__order {
+  margin-bottom: 18px;
+
+  &-gift {
+    position: relative;
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  &-text {
+    color: @white;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: @font-weight--base;
+    font-size: @font-size--base;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 170px;
+    top: 174px;
+    left: 55px;
+  }
+
+  &-gift::before {
+    content: "";
+
+    position: absolute;
+    width: 55px;
+    height: 60px;
+    top: 64px;
+    left: 112px;
+    background-image: url(../img/icon-gift.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+

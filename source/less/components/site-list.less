@@ -32,9 +32,44 @@
   &:last-child {
     border-bottom: 1px solid #e5e5e5;
   }
+
 }
 
 .site-list:hover {
   height: 208px;
   transform: translateY(0);
+}
+
+@media (min-width: @screen-tablet) {
+  .site-list {
+    transform: translateY(0);
+    height: auto;
+    flex-direction: row;
+
+    & a {
+      padding-top: 22px;
+      padding-bottom: 20px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &:hover {
+      height: auto;
+    }
+  }
+
+  .site-list__item {
+    border: 0;
+    margin-right: 36px;
+
+    &--active {
+    border-bottom: 2px solid @green;
+    }
+
+    &:last-child {
+    border: 0;
+    margin-right: 0;
+    }
+  }
+
 }

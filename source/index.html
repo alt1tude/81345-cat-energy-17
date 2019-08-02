@@ -11,9 +11,12 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" width="192" height="38" src="img/logo-mobile.svg" alt="Cat Energy">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-image" width="192" height="38" src="img/logo-mobile.svg" alt="Cat Energy">
+      </picture>
     </a>
-    <nav class="main-nav">
+   <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <svg class="main-nav__toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
           <rect y="16" width="24" height="2"/>
@@ -31,15 +34,21 @@
     </nav>
   </header>
   <main class="page-main">
+
     <h1 class="visually-hidden">Cat Energy - Функциональное питание для котов</h1>
+
     <section class="first-screen first-screen--cat">
       <h2 class="first-screen__description">Функциональное питание для&nbsp;котов</h2>
       <p class="first-screen__slogan">Занялся собой? Займись котом!</p>
       <a class="first-screen__main-link main-image" href="form.html">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
         <img class="main-image__image-chicken" width="280" height="271" src="img/index-can-mobile@1x.png" alt="Cat Energy Pro - Chicken">
+      </picture>
       </a>
       <a class="first-screen__form-link button" href="form.html">Подобрать программу</a>
     </section>
+
     <section class="catigories">
       <h2 class="visually-hidden">Лучшии каталоги Cat Energy</h2>
       <ul class="catigories__list--slim catigories-best">
@@ -101,7 +110,6 @@
       </div>
     </section>
   </main>
-  <div></div>
   <footer class="page-footer">
   <a class="page-footer__logo" href="index.html">
     <img class="page-footer__logo-image" width="128" height="24" src="img/logo-footer.svg" alt="Cat Energy">
