@@ -121,7 +121,8 @@
     margin-bottom: 30px;
     padding-top: 80px;
     padding-left: 54px;
-    padding-right: 60px;
+    padding-right: 284px;
+    padding-bottom: 62px;
 
     &__item-title {
       font-size: 36px;
@@ -129,18 +130,34 @@
       text-align: left;
       margin-bottom: 26px;
       padding: 0;
-      // width: 380px;
-      outline: 1px solid black;
+      width: 380px;     
     }
 
+    &__item-title::before {
+      width: 200px;
+      height: 200px;
+      top: 12px;
+      left: 400px;
+    }
+    &__item--slim::after {
+      width: 140px;
+      height: 194px;
+      top: 0;
+      left: 430px;    
+    }
+    &__item--pro::after {
+      width: 268px;
+      height: 112px;
+      top: 60px;
+      left: 366px;
+    }
     &__item-text {
       font-size: @font-size--base;
       line-height: @line-height--base;
       margin-bottom: 62px;
       padding: 0;
-      // width: 380px;
-      border: none;
-      outline: 1px solid black;
+      width: 380px;
+      border: none;    
     }
 
     &__item-link a {
