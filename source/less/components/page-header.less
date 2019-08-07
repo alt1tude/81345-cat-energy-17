@@ -24,7 +24,6 @@
   &:active {
     opacity: 0.6;
   }
-  // outline: 1px solid black;
 }
 
 @media (min-width: @screen-tablet) {
@@ -38,11 +37,19 @@
     padding: 0;
     flex-direction: row;
     justify-content: space-between;
-  }
 
-  .page-header__logo {
-    margin: 0;
+    &__logo {
+      margin: 0;
     // margin-right: 96px;
     }
+  }
+}
+
+@media (min-width:@screen-desktop) {
+  .page-header {
+    margin-top: 54px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 
 }

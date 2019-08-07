@@ -89,7 +89,9 @@
   }
 }
 
-.item-link__image--all {
+.item-link__image--mobile-svg {
+  fill: #000000;
+  opacity: 0.2;
   margin-bottom: 26px;
 }
 
@@ -126,4 +128,105 @@
     color: @black;
     background-color: @bg--lightgrey;
   }
+}
+
+@media (min-width: @screen-tablet) {
+  .catalog {
+    border: none;
+    outline: 1px solid black;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .catalog__item {
+    width: 244px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @bg--lightgrey;
+    &:last-child {
+    border-bottom: 1px solid @bg--lightgrey;
+    }
+    &-link {
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-link--all {
+      padding-top: 54px;
+    }
+    & .item-link__title {
+      width: 80%;
+      padding: 0;
+      text-align: center;
+      margin-top: 164px;
+      margin-bottom: 20px;
+    }
+    &--intro {
+      font-size: 16px;
+      line-height: 16px;
+      width: 180px;
+      margin: 0;
+    }
+  }
+
+  .item-link__image {
+    position: absolute;
+    top: -44px;
+    left: 0;
+  }
+
+  .item-link__image-big {
+    top: -74px;
+  }
+
+  .item-link__image--all {
+    margin-bottom: 50px;
+  }
+
+  .catalog-description {
+    position: static;
+    width: 100%;
+    margin-bottom: 32px;
+    & tr {
+      border-bottom: 1px solid #cdcdcd;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .catalog__order {
+    margin-bottom: 40px;
+    &-view--all {
+      margin-top: auto;
+    }
+  }
+
+  .catalog__item--all {
+    display: flex;
+    flex-direction: column;
+    background-color: @white;
+    border: 1px solid @bg--lightgrey;
+  }
+
+  .item-link__image--base-svg {
+    fill: #000000;
+    opacity: 0.2;
+    margin-bottom: 50px;
+  }
+
+  .item-link__title--all {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 150px;
+    margin-bottom: 30px;
+  }
+
 }

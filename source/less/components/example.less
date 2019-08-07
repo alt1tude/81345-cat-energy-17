@@ -3,29 +3,41 @@
   padding-right: 20px;
   background-color: @bg--lightgrey;
 
+  &__title {
+    color: @black;
+    font-family: @font-family--base;
+    font-style: normal;
+    font-weight: @font-weight--base;
+    font-size: @font-size--h2mobile;
+    line-height: @line-height--h2base;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  &__description {
+    font-family: @font-family--base;
+    font-style: normal;
+    font-weight: @font-weight--base;
+    font-size: @font-size--mobile;
+    line-height: @line-height--mobile;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__price {
+    color: @black;
+    font-family: @font-family--base;
+    font-style: normal;
+    font-weight: @font-weight--base;
+    font-size: @font-size--mobile;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
   outline: 1px solid black;
-}
-
-.example__title {
-  color: @black;
-  font-family: @font-family--base;
-  font-style: normal;
-  font-weight: @font-weight--base;
-  font-size: @font-size--h2mobile;
-  line-height: @line-height--h2base;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-}
-
-.example__description {
-  font-family: @font-family--base;
-  font-style: normal;
-  font-weight: @font-weight--base;
-  font-size: @font-size--mobile;
-  line-height: @line-height--mobile;
-  margin: 0;
-  padding: 0;
 }
 
 .example__weight-loss {
@@ -36,15 +48,28 @@
 
 }
 
-.example__price {
-  color: @black;
-  font-family: @font-family--base;
-  font-style: normal;
-  font-weight: @font-weight--base;
-  font-size: @font-size--mobile;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
+@media (min-width: @screen-tablet) {
+  .example {
+    padding: 0;
+    padding-top: 52px;
+    background-color: @white;
+
+    &__title {
+      font-size: @font-size--h2base;
+      line-height: @line-height--h2base;
+      margin: 0;
+      margin-bottom: 60px;
+      padding: 0;
+    }
+
+    &__description {
+    font-size: @font-size--base;
+    line-height: @line-height--base;
+    margin: 0;
+    padding: 0;
+    }
+
+  }
+
+
 }

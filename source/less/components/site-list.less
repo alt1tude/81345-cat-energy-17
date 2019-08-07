@@ -15,7 +15,6 @@
   // margin-left: -20px;
   // margin-right: -20px;
   border-top: 1px solid #e5e5e5;
-
   & a {
     color: @black;
     font-family: @font-family--base;
@@ -28,11 +27,9 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
-
   &:last-child {
     border-bottom: 1px solid #e5e5e5;
   }
-
 }
 
 .site-list:hover {
@@ -45,14 +42,12 @@
     transform: translateY(0);
     height: auto;
     flex-direction: row;
-
     & a {
       padding-top: 22px;
       padding-bottom: 20px;
       font-size: 18px;
       line-height: 25px;
     }
-
     &:hover {
       height: auto;
     }
@@ -61,15 +56,17 @@
   .site-list__item {
     border: 0;
     margin-right: 36px;
-
     &--active {
-    border-bottom: 2px solid @green;
+      border-bottom: 2px solid @green;
     }
-
     &:last-child {
-    border: 0;
-    margin-right: 0;
+      border: 0;
+      margin-right: 0;
     }
   }
+}
+
+@media (min-width: @screen-desktop) {
+
 
 }
