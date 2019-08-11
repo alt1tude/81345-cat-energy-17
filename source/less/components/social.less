@@ -17,6 +17,13 @@
   &__link--insta-icon,
   &__link--fb-icon {
     fill: #666666;
+    &:hover,
+    &:focus {
+      fill: #68b738;
+    }
+    &:active {
+      fill: rgba(#68b738, 0.3);
+    }
   }
 }
 
@@ -25,9 +32,23 @@
     border: none;
 
     &__list {
-    width: 124px;
-    padding: 0;
+      width: 124px;
+      padding: 0;
     }
+    &__link--vk-icon {
+      width: 30px;
+      height: 16px;
+    }
+    &__link--insta-icon {
+      width: 23px;
+      height: 23px;
+    }
+    &__link--fb-icon {
+      width: 14px;
+      height: 28px;
+    }
+
   }
+
 
 }

@@ -1,6 +1,8 @@
 .advantages {
+  margin: 0 auto;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px;  
+  // outline: 1px solid black;
 
   &__title {
     color: @black;
@@ -10,7 +12,19 @@
     font-size: @font-size--h2mobile;
     line-height: @line-height--h2base;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+  }
+
+  &__item {
+    margin-bottom: 20px;  //Двигает .example
+    padding-top: 6px;
+    padding-left: 80px;
+    padding-bottom: 6px;        
+    position: relative; 
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;  //Пока убрал для .example
   }
 
   &__list {
@@ -20,7 +34,7 @@
   }
 
   &__description {
-    font-family: @font-family--base;
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: @font-weight--base;
     font-size: @font-size--mobile;
@@ -70,28 +84,16 @@
       background-position: 0 0;
     }
   }
-  outline: 1px solid black;
-}
-
-.advantages__item {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 80px;
-  margin-bottom: 20px;  //Двигает .example
-  position: relative;
-
-  &:last-child {
-    margin-bottom: 0;  //Пока убрал для .example
-  }
 
 }
 
 @media (min-width: @screen-tablet) {
   .advantages {
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 52px;
-
+    padding-right: 30px;
+    padding-bottom: 54px;
+    padding-left: 30px;    
+    border-bottom: 1px solid #e6e6e6;
     &__title {
       font-size: @font-size--h2base;
       line-height: @line-height--h2base;
@@ -103,43 +105,77 @@
       justify-content: space-between;
       counter-reset: myCounter;
     }
+    &__item {
+      width: 46%;
+      margin-bottom: 90px;
+      padding-left: 0;
+      padding-right: 144px;
+      padding-top: 118px;
+      padding-bottom: 48px; 
+    }    
 
-  .advantages__item {
-    width: 180px;
-    padding: 0;
-    padding-top: 116px;
-    padding-bottom: 48px;
-    padding-right: 144px;
-    margin-bottom: 88px;
+    &__item:nth-child(3),
+    &__item:nth-child(4) {
+      margin-bottom: 0; 
+    }
 
-    &::before {
+    &__item::before {
       content: counter(myCounter);
       counter-increment: myCounter;
       position: absolute;
-      top: -34px;
+      top: -40px;
       left: 90px;
       font-size: 280px;
       line-height: 280px;
       color: @bg--lightgrey;
     }
-  }
-  &__description {
-    font-size: @font-size--base;
-    line-height: @line-height--base;
-    &::before {
-      width: 80px;
-      height: 80px;
-      top: -116px;
-      left: 0;
-    }
-    &::after {
-      width: 50px;
-      height: 50px;
-      top: -102px;
-      left: 14px;
+
+    &__description {
+      font-size: @font-size--base;
+      line-height: @line-height--base;
+      &::before {
+        width: 80px;
+        height: 80px;
+        top: -116px;
+        left: 0;      
+      }
+      &::after {
+        width: 50px;
+        height: 50px;
+        top: -102px;
+        left: 14px;
+      }
     }
   }
 
+}
+@media (min-width:@screen-desktop) {
+  .advantages {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    max-width: 1300px;
+    border-bottom: none;
+
+    &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: myCounter;
+    }
+
+    &__item {
+    width: 285px;
+    margin-bottom: 0;
+    padding-right: 40px;
+    padding-bottom: 50px;      
+   }
+   &__item::before {
+      top: -36px;
+      left: 124px;
+    }  
+
   }
+
 
 }

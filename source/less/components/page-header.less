@@ -1,19 +1,16 @@
 .page-header {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
-  // margin-top: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
-
+  margin-top: 12px;
+  // margin-bottom: 16px;
+  // padding-left: 20px;
+  // padding-right: 20px;
   display: flex;
   flex-direction: column;
+ }
 
-  outline: 1px solid black;
-}
-
-.page-header__logo {
-  margin-top: 10px;
-  // margin-bottom: 16px;
+.page-header__logo { 
+  padding-left: 20px; 
   margin-right: 80px;
 
   &:hover,
@@ -29,9 +26,7 @@
 @media (min-width: @screen-tablet) {
   .page-header {
     width: auto;
-    // margin-top: 24px;
-    // margin-left: 30px;
-    // margin-right: 30px;
+    margin-top: 24px;
     padding-left: 30px;
     padding-right: 30px;
     flex-direction: row;
@@ -39,16 +34,24 @@
 
     &__logo {
       margin: 0;
-    // margin-right: 96px;
+      padding-left: 0;
+      width: 174px;
+      outline: 1px solid black;
     }
   }
 }
 
 @media (min-width:@screen-desktop) {
   .page-header {
-    margin-top: 54px;
-    margin-left: 70px;
-    margin-right: 70px;
-  }
+    max-width: @screen-desktop;
+    margin-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 
+    &__logo {
+      margin: 0;
+      padding: 0;
+      width: 202px;
+    }
+  }
 }

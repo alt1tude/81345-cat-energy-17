@@ -6,7 +6,7 @@
   padding-bottom: 22px;
 
   &__text {
-    font-family: @font-family--base;
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: @font-weight--base;
     font-size: @font-size--base;
@@ -17,6 +17,13 @@
 
   &__link--htmlacademy-icon {
     fill: #666666;
+    &:hover,
+    &:focus {
+      fill: #68b738;
+    }
+    &:active {
+      fill: rgba(#68b738, 0.3);
+    }
   }
 }
 

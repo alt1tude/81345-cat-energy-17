@@ -15,6 +15,15 @@
   font-style: normal;
   font-weight: 700;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;  
+}
 
 body {
   min-width: @screen-mobile;
@@ -30,14 +39,14 @@ body {
   color: @text--darkgrey;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 a {
   text-decoration: none;
   color: @text--darkgrey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
