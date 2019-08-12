@@ -1,0 +1,29 @@
+@media (min-width: @screen-desktop) {
+  .index-bg {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 50%;
+      min-height: 696px;
+      top: -50px;
+      right: 0;
+
+      outline: 1px solid black;
+
+      background-color: #65a83c;    
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      background-size: cover;
+      z-index: -1;
+      
+      // @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      //   background-image: url("../img/index-background-desktop@2x.jpg");
+      //   background-size: auto 100%;
+      // }
+    }
+  }
+}

@@ -6,16 +6,34 @@
   padding-bottom: 22px;
 
   &__text {
-  font-family: @font-family--base;
-  font-style: normal;
-  font-weight: @font-weight--base;
-  font-size: @font-size--base;
-  line-height: 16px;
-  margin: 0;
-  padding: 0;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: @font-weight--base;
+    font-size: @font-size--base;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
   }
 
   &__link--htmlacademy-icon {
-  fill: #666666;
+    fill: #666666;
+    &:hover,
+    &:focus {
+      fill: #68b738;
+    }
+    &:active {
+      fill: rgba(#68b738, 0.3);
+    }
   }
+}
+
+@media (min-width: @screen-tablet) {
+  .copyright {
+    margin: 0;
+    padding: 0;
+    &__text {
+      margin-right: 24px;
+    }
+  }
+
 }

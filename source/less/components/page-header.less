@@ -1,19 +1,16 @@
 .page-header {
-  width: 280px;  // width 280, при 320 контент не ужимается
+  width: 320px;
   margin: 0 auto;
   margin-top: 12px;
-  padding-left: 20px;  //Не забыть задать вопрос Мурату,
-  padding-right: 20px; //про ширину и паддинги в header и main
-
+  // margin-bottom: 16px;
+  // padding-left: 20px;
+  // padding-right: 20px;
   display: flex;
   flex-direction: column;
+ }
 
-  outline: 1px solid black;
-}
-
-.page-header__logo {
-  margin-top: 10px;
-  // margin-bottom: 16px;
+.page-header__logo { 
+  padding-left: 20px; 
   margin-right: 80px;
 
   &:hover,
@@ -26,3 +23,35 @@
   }
 }
 
+@media (min-width: @screen-tablet) {
+  .page-header {
+    width: auto;
+    margin-top: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__logo {
+      margin: 0;
+      padding-left: 0;
+      width: 174px;
+      outline: 1px solid black;
+    }
+  }
+}
+
+@media (min-width:@screen-desktop) {
+  .page-header {
+    max-width: @screen-desktop;
+    margin-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &__logo {
+      margin: 0;
+      padding: 0;
+      width: 202px;
+    }
+  }
+}
