@@ -85,6 +85,7 @@
     background-image: url(../img/gift-photo-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
+
     &::before {
       content: "";
 
@@ -96,6 +97,11 @@
       background-image: url(../img/icon-gift.svg);
       background-repeat: no-repeat;
       background-position: 0 0;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
+      background-size: 100% auto;
     }
   }
   &__order-text {
@@ -193,9 +199,13 @@
       text-align: center;
       padding-top: 62px;
       padding-left: 330px;
+
       &::before {
         top: 65px;
         left: 90px;
+      }
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
       }
     }
     &__order-text {
@@ -284,6 +294,9 @@
       padding-left: 0;
       &::before {
         left: 96px;
+      }
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/gift-photo-desktop@2x.jpg");
       }
     }
     &__order-text {
