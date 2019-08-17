@@ -52,7 +52,6 @@
     margin-bottom: 25px; // +margin 14px fields p
     padding: 0;
     padding-left: 20px;
-    padding-right: 40px;
   }
   &__fields {
     margin: 0;
@@ -72,7 +71,7 @@
   }
   &__radio {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 30px; //
     padding: 0;
     padding-top: 22px;
     padding-bottom: 22px;
@@ -171,9 +170,9 @@
   }
   &__comment {
     margin: 0;
-    margin-bottom: 8px; //textarea имеет свои неубираемый св-ва
+    margin-bottom: 10px; //top/bottom(16/20) неубираемый отступы textarea
     padding: 0;
-    border: none;
+    border: none;  
   }
   &__comment legend {
     color: @black;
@@ -182,7 +181,7 @@
     font-weight: @font-weight--base;
     font-size: 24px;
     line-height: @line-height--base;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     position: relative;
 
      &::before {
@@ -213,6 +212,7 @@
     font-style: normal;
     font-weight: @font-weight--base;
     font-size: 24px;
+    line-height: @line-height--base;
     margin-bottom: 30px;
     position: relative;
 
@@ -277,15 +277,17 @@
       font-weight: @font-weight--base;
       font-size: @font-size--mobile;
       line-height: 16px;
+      vertical-align: middle;
       text-align: center;
     }
   }
   &__button {
+    font-size: @font-size--base;
+    line-height: 20px;
     width: 280px;
     margin-bottom: 24px;
   }
 }
-
 
 @media (min-width: @screen-tablet) {
   .form {
@@ -305,19 +307,21 @@
       font-size: 20px;
       line-height: 30px;
       margin: 0;
-      margin-bottom: 50px; // +margin 20px fields p
+      margin-bottom: 70px;
       padding: 0;
       padding-left: 70px;
-      width: 400px;
     }
     &__fields {
       margin: 0;
-      margin-bottom: 70px; //
+      margin-bottom: 70px;
       padding-left: 40px;
       padding-right: 40px;
     }
     &__fields p {
-      margin-top: 20px;
+      margin-top: 22px;
+      &:first-child {
+        margin: 0;
+      }
     }
     &__radio {
       margin-bottom: 80px;
@@ -335,20 +339,13 @@
       padding-bottom: 10px;
     }
     &__radio label {
-      padding-left: 65px;
+      padding-left: 60px;
 
       &::before {
         top: -3px;
         left: 0;
         width: 40px;
         height: 40px;
-      }
-      &:hover::before,
-      &:focus::before {
-        border: 1px solid #bababa;
-      }
-      &:active {
-        opacity: 0.3;
       }
     }
     &__radio input[type="radio"]:checked+label::after {
@@ -363,142 +360,274 @@
       padding-right: 40px;
       border: none;
 
-    &--mail,
-    &--phone {
-      top: 24px;
-      right: 20px;
+      &--mail,
+      &--phone {
+        top: 24px;
+        right: 20px;
+      }
+      &--phone {
+        right: 16px;
+      }
     }
-    &--phone {
-      right: 16px;
+    &__contacts legend {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 50px; // +margin 20px contacts p
+
+      &::before {
+        top: 20px;
+        right: -170px;
+        width: 145px;
+      }
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 20px;
+        left: -70px;
+        width: 30px;
+        height: 3px;
+        background-color: #68b738;
+      }
+    }
+    &__contacts p {
+      margin-top: 20px;
+    }
+    &__comment {
+      margin: 0;
+      margin-bottom: 44px; //top/bottom(26px) неубираемый отступы textarea
+      padding-left: 40px;
+      padding-right: 40px;
+      border: none;
+    }
+    &__comment legend {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 16px;
+
+      &::before {
+        top: 20px;
+        right: -500px;
+        width: 480px;
+      }
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 20px;
+        left: -70px;
+        width: 30px;
+        height: 3px;
+        background-color: #68b738;
+      }
+    }
+    &__comment textarea {
+      min-width: 630px;
+      min-height: 175px;
+    }
+    &__checkbox {
+      margin: 0;
+      margin-bottom: 22px; // +margin 32px checkbox p
+      padding: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      border: none;
+    }
+    &__checkbox--wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    } 
+    &__checkbox legend {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 52px;
+
+      &::before {
+        top: 20px;
+        right: -470px;
+        width: 446px;
+        height: 3px;
+      }
+      &:after {
+        content: "";
+
+        position: absolute;
+        top: 20px;
+        left: -70px;
+        width: 30px;
+        height: 3px;
+        background-color: #68b738;
+      }
+    }
+    &__checkbox p {
+      margin-bottom: 32px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 44%;  
+    }
+    &__checkbox label {
+      padding-left: 60px;
+
+      &::before {
+        top: -4px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &__checkbox input[type="checkbox"]:checked+label::after {
+      top: 8px;
+      left: 10px;
+      width: 21px;
+      height: 16px;
+    }
+    &__send {
+      display: flex;
+      flex-direction: row;
+      align-items: center;    
+      margin-bottom: 72px;
+      padding-left: 40px;
+      padding-right: 40px;
+      & small {
+        font-family: "Arial", sans-serif;
+        font-style: normal;
+        font-weight: @font-weight--base;
+        font-size: @font-size--mobile;
+        line-height: 16px;
+      }
+    }
+    &__button {
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      width: 284px;
+      margin: 0;
+      margin-right: 60px; 
     }
   }
-  &__contacts legend {
-    font-size: 36px;
-    line-height: 36px;
-    margin-bottom: 50px; // +margin 20px contacts p
-
-    &::before {
-      top: 20px;
-      right: -170px;
-      width: 145px;
-    }
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 20px;
-      left: -70px;
-      width: 30px;
-      height: 3px;
-      background-color: #68b738;
-    }
-  }
-  &__contacts p {
-    margin-top: 20px;
-  }
-
-
-  &__comment {
-    margin: 0;
-    margin-bottom: 8px; //textarea имеет свои неубираемый св-ва
-    padding-left: 40px;
-    padding-right: 40px;
-    border: none;
-    outline: 1px solid black;
-  }
-  &__comment legend {
-    font-size: 36px;
-    line-height: 36px;
-    margin-bottom: 16px;
-
-     &::before {
-      top: 20px;
-      right: -500px;
-      width: 480px;
-    }
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 20px;
-      left: -70px;
-      width: 30px;
-      height: 3px;
-      background-color: #68b738;
-    }
-  }
-  &__comment textarea {
-    min-width: 630px;
-    min-height: 175px;
-    resize: none;
-  }
-
-
-  &__checkbox {
-    margin: 0;
-    margin-bottom: 34px;
-    padding: 0;
-    border: none;
-  }
-  &__checkbox legend {
-    color: @black;
-    font-family: @font-family--base;
-    font-style: normal;
-    font-weight: @font-weight--base;
-    font-size: 24px;
-    margin-bottom: 30px;
-    position: relative;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: 14px;
-      right: -158px;
-      width: 138px;
-      height: 3px;
-      background-color: #68b738;
-    }
-  }
-
-
-
-
-
-
-
-
-  }
-
-
 }
 
+@media (min-width: @screen-desktop) {
+  .form {
+    padding-left: 40px;
+    padding-right: 40px;
 
+    &__description {
+      max-width: 1300px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      padding-left: 40px;
+    }
+    &__fields {
+      margin: 0;
+      padding: 0;
+      width: 570px;
+    }   
+    &__radio {
+      margin: 0;
+      width: 570px;
+    }
+    &__radio p {
+      margin-top: 14px;
+    }
+    &__main--wrap {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 72px;
+    }
+    &__contacts {
+      max-width: 1300px;
+      margin: 0;
+      margin: 0 auto;
+      margin-bottom: 70px;
+      padding: 0;
+    }
+    &__contacts legend {
+      margin-bottom: 70px; // +margin 20px contacts p
 
+      &::before {
+        top: 20px;
+        right: -730px;
+        width: 708px;
+      }
+      &::after {
+        top: 20px;
+        left: -40px;
+        width: 40px;
+      }
+    }
+    &__contacts--wrap {
+      display: flex;
+      justify-content: space-between;     
+    }
+    &__contacts p {
+      width: 570px;
+      margin: 0;
+    }
+    &__comment {
+      max-width: 1300px;
+      margin: 0 auto;
+      margin-bottom: 54px; //top/bottom(16px) неубираемый отступы textarea
+      padding: 0;
+    }
+    &__comment legend {
+       margin: 0;
+       margin-bottom: 54px;
 
+      &::before {
+        top: 20px;
+        right: -1062px;
+        width: 1040px;
+      }
+      &::after {
+        top: 20px;
+        left: -40px;
+        width: 40px;
+      }
+    }
+    &__comment textarea {
+      width: 100%;
+    }
+    &__checkbox {
+      max-width: 1300px;
+      margin: 0;
+      margin: 0 auto;
+      margin-bottom: 28px; // +margin 32px от checkbox p
+      padding: 0;
+    }
+    &__checkbox legend {
+      margin-bottom: 52px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width:@screen-desktop) {
-
+      &::before {
+        top: 20px;
+        right: -1032px;
+        width: 1008px;
+      }
+      &:after {
+        top: 20px;
+        left: -40px;
+        width: 40px;
+      }
+    }
+    &__checkbox p {
+      margin: 0;
+      margin-bottom: 32px;
+      width: 20%; 
+    }
+    &__send {
+      max-width: 1300px;
+      margin: 0 auto;
+      margin-bottom: 82px;
+      padding: 0; 
+    }
+    &__button {
+      width: 570px;
+      margin: 0;
+      margin-right: 80px; 
+    }
+  } 
 }
