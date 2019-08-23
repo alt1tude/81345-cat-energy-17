@@ -1,8 +1,9 @@
 .advantages {
   margin: 0 auto;
+  // margin-bottom: 42px;
   padding-left: 20px;
-  padding-right: 20px;  
-  // outline: 1px solid black;
+  padding-right: 20px;
+    // outline: 1px solid black;
 
   &__title {
     color: @black;
@@ -12,15 +13,15 @@
     font-size: @font-size--h2mobile;
     line-height: @line-height--h2base;
     margin: 0;
-    padding: 0;    
+    padding: 0;
   }
 
   &__item {
     margin-bottom: 20px;  //Двигает .example
     padding-top: 6px;
     padding-left: 80px;
-    padding-bottom: 6px;        
-    position: relative; 
+    padding-bottom: 6px;
+    position: relative;
   }
 
   &__item:last-child {
@@ -108,11 +109,13 @@
 
 @media (min-width: @screen-tablet) {
   .advantages {
+    margin-bottom: 50px; // Проверить через пиксель
     padding-top: 52px;
     padding-right: 30px;
     padding-bottom: 54px;
-    padding-left: 30px;    
+    padding-left: 30px;
     border-bottom: 1px solid #e6e6e6;
+
     &__title {
       font-size: @font-size--h2base;
       line-height: @line-height--h2base;
@@ -130,12 +133,12 @@
       padding-left: 0;
       padding-right: 144px;
       padding-top: 118px;
-      padding-bottom: 48px; 
-    }    
+      padding-bottom: 48px;
+    }
 
     &__item:nth-child(3),
     &__item:nth-child(4) {
-      margin-bottom: 0; 
+      margin-bottom: 0;
     }
 
     &__item::before {
@@ -156,7 +159,7 @@
         width: 80px;
         height: 80px;
         top: -116px;
-        left: 0;      
+        left: 0;
       }
       &::after {
         width: 50px;
@@ -170,28 +173,22 @@
 
 @media (min-width:@screen-desktop) {
   .advantages {
+    margin-bottom: 212px; // Проверить через пиксель
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
     max-width: 1300px;
     border-bottom: none;
-
-    &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    counter-reset: myCounter;
-    }
 
     &__item {
     width: 285px;
     margin-bottom: 0;
     padding-right: 40px;
-    padding-bottom: 50px;      
+    padding-bottom: 50px;
    }
    &__item::before {
       top: -36px;
       left: 124px;
-    }  
+    }
   }
 }
