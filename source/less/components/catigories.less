@@ -1,16 +1,17 @@
 .catigories {
   margin: 0 auto;
+  margin-bottom: 17px;
   padding-left: 20px;
   padding-right: 20px;
 
   &__list {
     list-style: none;
     margin: 0;
-    margin-bottom: 20px;
-    padding-top: 40px;
+    margin-bottom: 18px;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 22px;
+    padding-bottom: 18px;
     background-color: @bg--lightgrey;
     position: relative;
   }
@@ -46,7 +47,7 @@
     position: absolute;
     width: 67px;
     height: 28px;
-    top: 36px;
+    top: 34px;
     left: 12px;
     background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
@@ -61,11 +62,13 @@
     line-height: 37px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 40px;    
+    margin-bottom: 30px;
+
+    &--pro {
+      padding-left: 40px;
+    }    
   }
-  &__item--pro {
-    padding-left: 40px;
-  }  
+
   &__item-text {
     color: @text--darkgrey;
     font-family: "Arial", sans-serif;
@@ -73,8 +76,8 @@
     font-weight: @font-weight--base;
     font-size: 14px;
     line-height: @line-height--mobile;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 24px;
+    margin-bottom: 13px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   &__item-link {
@@ -87,7 +90,7 @@
     width: 24px;
     height: 11px;
     top: 6px;
-    left: 100px;
+    left: 95px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;    
@@ -159,7 +162,9 @@
       line-height: 37px;
       text-align: left;
       margin-bottom: 26px;
-      padding: 0;   
+      &--pro {
+        padding: 0;
+      }         
     }
     &__item-text {
       font-size: @font-size--base;
@@ -198,25 +203,30 @@
       width: 100px;
       height: 100px;
       top: 47px;
-      left: 52px;      
+      left: 48px;
     }
     &__list--slim::after {
       width: 70px;
       height: 97px;
       top: 40px;
-      left: 68px;
+      left: 62px;
     }
     &__list--pro::after {
       width: 134px;
       height: 56px;
       top: 70px;
-      left: 34px;
+      left: 30px;
     }
     &__item-title {
       text-align: center;
       margin-bottom: 74px;
       padding: 0;
+
+      &--pro {
+        padding-left: 84px;
+      }
     }
+   
     &__item-text {
       font-size: @font-size--base;
       line-height: @line-height--base;

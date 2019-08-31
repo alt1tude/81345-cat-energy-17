@@ -1,8 +1,9 @@
 .example {
+  padding-top: 16px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: @bg--lightgrey;
-  outline: 1px solid black;
+  // outline: 1px solid black;
 
   &__title {
     color: @black;
@@ -12,18 +13,67 @@
     font-size: @font-size--h2mobile;
     line-height: @line-height--h2base;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding: 0;
   }
 
   &__description {
-    font-family: @font-family--base;
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: @font-weight--base;
     font-size: @font-size--mobile;
     line-height: @line-height--mobile;
     margin: 0;
+    margin-bottom: 24px;
     padding: 0;
+  }
+
+  &__fields {
+    margin-bottom: 46px;
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__field {
+    width: 124px;
+    margin-bottom: 34px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+
+    &-weight,
+    &-time {
+      color: @black;
+      font-family: @font-family--base;
+      font-style: normal;
+      font-weight: @font-weight--base;
+      font-size: 24px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+    }
+    &-text {
+      font-family: "Arial", sans-serif;
+      font-style: normal;
+      font-weight: @font-weight--base;
+      font-size: 12px;
+      line-height: 12px;
+      margin: 0;
+      padding: 0;
+      max-width: 82px;
+      position: absolute;
+      bottom: -16px;
+      left: 21px;
+      background-color: @bg--lightgrey;
+    }
   }
 
   &__price {
@@ -42,24 +92,126 @@
 
 @media (min-width: @screen-tablet) {
   .example {
-    padding: 0;
-    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 666px;
+    position: relative;
+    background-color: @white;
 
     &__title {
       font-size: @font-size--h2base;
       line-height: @line-height--h2base;
-      margin: 0;
       margin-bottom: 60px;
-      padding: 0;
+    }
+
+    &__description {
+      font-size: @font-size--base;
+      line-height: @line-height--base;
+      margin-bottom: 56px;
+    }
+
+    &__fields {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__wrap {
+        width: 368px;
+      }
+    }
+
+    &__field {
+      width: 162px;
+      margin: 0;
+      padding-top: 22px;
+      padding-bottom: 22px;
+
+      &-weight,
+      &-time {
+        font-size: 30px;
+        line-height: 37px;
+      }
+      &-text {
+        font-size: 14px;
+        line-height: 14px;
+        max-width: 100px;
+        bottom: -6px;
+        left: 31px;
+        background-color: @white;
+      }
+    }
+    &__field:last-child p:last-child {
+      max-width: 130px;
+      left: 16px;
+    }
+
+    &__price {
+      width: 180px;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width:@screen-desktop) {
+  .example {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 68px;
+    background-color: @bg--lightgrey;
+    
+
+    &__wrap {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 40px;
+      padding-right: 40px;
+      display: flex;
+
+      &__info {
+        width: 610px;
+        margin-top: -142px; // Проверить через пиксель
+        padding-right: 150px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 140px; // Проверить через пиксель
     }
 
     &__description {
       font-size: @font-size--base;
       line-height: @line-height--base;
       margin: 0;
+      margin-bottom: 70px;
       padding: 0;
     }
+
+    &__fields {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &__wrap {
+        width: 368px;
+        margin-bottom: 60px;
+      }
+    }
+
+    &__field-text {
+      background-color: @bg--lightgrey;
+    }
+
+    &__price {
+      width: auto;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+      &-value {
+        margin-left: 64px;
+      }
+    }
   }
-
-
 }
