@@ -1,7 +1,9 @@
 .example {
+  padding-top: 16px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: @bg--lightgrey;
+  // outline: 1px solid black;
 
   &__title {
     color: @black;
@@ -11,7 +13,7 @@
     font-size: @font-size--h2mobile;
     line-height: @line-height--h2base;
     margin: 0;
-    margin-bottom: 34px;
+    margin-bottom: 25px;
     padding: 0;
   }
 
@@ -22,14 +24,14 @@
     font-size: @font-size--mobile;
     line-height: @line-height--mobile;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     padding: 0;
   }
 
   &__fields {
     margin-bottom: 46px;
 
-    &--wrap {
+    &__wrap {
       display: flex;
       justify-content: space-between;
     }
@@ -37,17 +39,17 @@
 
   &__field {
     width: 124px;
-    margin-bottom: 38px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-bottom: 34px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     border: 1px solid #cdcdcd;
     border-radius: 5px;
     text-align: center;
     vertical-align: middle;
     position: relative;
 
-    &--weight,
-    &--time {
+    &-weight,
+    &-time {
       color: @black;
       font-family: @font-family--base;
       font-style: normal;
@@ -58,7 +60,7 @@
       margin: 0;
       padding: 0;
     }
-    &--text {
+    &-text {
       font-family: "Arial", sans-serif;
       font-style: normal;
       font-weight: @font-weight--base;
@@ -114,7 +116,7 @@
       justify-content: space-between;
       align-items: center;
 
-      &--wrap {
+      &__wrap {
         width: 368px;
       }
     }
@@ -125,12 +127,12 @@
       padding-top: 22px;
       padding-bottom: 22px;
 
-      &--weight,
-      &--time {
+      &-weight,
+      &-time {
         font-size: 30px;
         line-height: 37px;
       }
-      &--text {
+      &-text {
         font-size: 14px;
         line-height: 14px;
         max-width: 100px;
@@ -159,6 +161,7 @@
     padding-right: 0;
     padding-bottom: 68px;
     background-color: @bg--lightgrey;
+    
 
     &__wrap {
       max-width: 1300px;
@@ -167,11 +170,10 @@
       padding-right: 40px;
       display: flex;
 
-      &--info {
+      &__info {
         width: 610px;
         margin-top: -142px; // Проверить через пиксель
         padding-right: 150px;
-        outline: 1px solid black;
       }
     }
 
@@ -192,13 +194,13 @@
       justify-content: flex-start;
       align-items: flex-start;
 
-      &--wrap {
+      &__wrap {
         width: 368px;
         margin-bottom: 60px;
       }
     }
 
-    &__field--text {
+    &__field-text {
       background-color: @bg--lightgrey;
     }
 
@@ -207,7 +209,7 @@
       font-size: 20px;
       line-height: 20px;
       text-align: left;
-      &--value {
+      &-value {
         margin-left: 64px;
       }
     }

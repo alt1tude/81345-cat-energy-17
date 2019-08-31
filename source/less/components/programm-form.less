@@ -29,8 +29,8 @@
     border: 1px solid #e6e6e6;
     flex-grow: 1;
     &:hover,
-    &:focus + .form__contacts--mail,
-    &:focus + .form__contacts--phone {
+    &:focus + .form__contacts-mail,
+    &:focus + .form__contacts-phone {
       border-color: #cdcdcd;
       fill: #68b738;
     }
@@ -39,19 +39,6 @@
       padding-right: 14px;
       border: 2px solid #444444;
     }
-  }
-  &__description {
-    color: @black;
-    font-family: @font-family--base;
-    font-style: normal;
-    font-weight: @font-weight--base;
-    font-size: @font-size--mobile;
-    line-height: @line-height--mobile;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 25px; // +margin 14px fields p
-    padding: 0;
-    padding-left: 20px;
   }
   &__fields {
     margin: 0;
@@ -126,13 +113,13 @@
     padding: 0;
     border: none;
 
-    &--mail,
-    &--phone {
+    &-mail,
+    &-phone {
       position: absolute;
       top: 16px;
       right: 16px;
     }
-    &--phone {
+    &-phone {
       right: 14px;
     }
   }
@@ -301,16 +288,7 @@
     & textarea {
       font-size: 20px;
       line-height: 20px;
-    }
-
-    &__description {
-      font-size: 20px;
-      line-height: 30px;
-      margin: 0;
-      margin-bottom: 70px;
-      padding: 0;
-      padding-left: 70px;
-    }
+    }    
     &__fields {
       margin: 0;
       margin-bottom: 70px;
@@ -360,12 +338,12 @@
       padding-right: 40px;
       border: none;
 
-      &--mail,
-      &--phone {
+      &-mail,
+      &-phone {
         top: 24px;
         right: 20px;
       }
-      &--phone {
+      &-phone {
         right: 16px;
       }
     }
@@ -433,7 +411,7 @@
       padding-right: 40px;
       border: none;
     }
-    &__checkbox--wrap {
+    &__checkbox-wrap {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -513,13 +491,7 @@
   .form {
     padding-left: 40px;
     padding-right: 40px;
-
-    &__description {
-      max-width: 1300px;
-      margin: 0 auto;
-      margin-bottom: 50px;
-      padding-left: 40px;
-    }
+   
     &__fields {
       margin: 0;
       padding: 0;
@@ -532,7 +504,7 @@
     &__radio p {
       margin-top: 14px;
     }
-    &__main--wrap {
+    &__main-wrap {
       max-width: 1300px;
       margin: 0 auto;
       display: flex;
@@ -560,7 +532,7 @@
         width: 40px;
       }
     }
-    &__contacts--wrap {
+    &__contacts-wrap {
       display: flex;
       justify-content: space-between;     
     }

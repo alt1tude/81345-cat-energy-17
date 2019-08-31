@@ -1,12 +1,17 @@
 .slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  margin: 0;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__list {
    list-style: none;
    margin: 0;
-   margin-bottom: 36px;
+   margin-bottom: 47px;
    padding: 0;
   }
 
@@ -17,17 +22,21 @@
   &__image--after {
     display: none;
   }
-
-  &__image--active {
-    display: block;
+ 
+  &__image--before {
+    display: none;
   }
 
+   &__image--active {
+    display: block;
+  }
 
   &__toggles {
     width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 39px;
   }
 
   &__toggle {
@@ -41,6 +50,10 @@
     border: none;
     background: none;
     cursor: pointer;
+    &:active {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
   }
 
   &__range {
@@ -80,10 +93,12 @@
 
 
 @media (min-width: @screen-tablet) {
-  .slider {
-    margin-top: -170px;
+  .slider {    
+    
+    margin: 0;
 
     &__wrap {
+      margin-top: -170px;
       width: 100%;
       position: absolute;
       bottom: 0;
@@ -105,7 +120,7 @@
       padding-bottom: 7px;
       font-size: 20px;
       line-height: 20px;
-      border-bottom: 1px dashed #bebebe;
+      border-bottom: 1px dashed #bebebe;      
     }
 
     &__range {
@@ -164,12 +179,15 @@
 
 
 @media (min-width:@screen-desktop) {
-  .slider {
-    margin-top: -170px;
+  .slider {   
+    
+    margin: 0;
 
     &__wrap {
+      margin-top: -170px;
       width: auto;
       position: static;
+      background-color: transparent;
     }
 
     &__list {
@@ -179,7 +197,6 @@
     &__toggles {
       width: 570px;
       margin-bottom: 0;
-      outline: 1px solid black;
     }
 
     &__toggle {
@@ -189,7 +206,5 @@
       line-height: 20px;
       border-bottom: 1px dashed #bebebe;
     }
-
   }
-
 }
