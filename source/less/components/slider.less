@@ -1,36 +1,28 @@
 .slider {
-
   margin: 0;
-
   &__wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   &__list {
-   list-style: none;
-   margin: 0;
-   margin-bottom: 47px;
-   padding: 0;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 47px;
+    padding: 0;
   }
-
   &__item {
     margin: 0;
   }
-
   &__image--after {
     display: none;
   }
- 
   &__image--before {
     display: none;
   }
-
-   &__image--active {
+  &__image--active {
     display: block;
   }
-
   &__toggles {
     width: 200px;
     display: flex;
@@ -38,7 +30,6 @@
     align-items: center;
     margin-bottom: 39px;
   }
-
   &__toggle {
     color: @black;
     font-family: @font-family--base;
@@ -55,11 +46,9 @@
       padding-right: 7px;
     }
   }
-
   &__range {
     width: auto;
   }
-
   &__scale {
     width: 84px;
     height: 14px;
@@ -71,16 +60,13 @@
     border: 1px solid #cdcdcd;
     border-radius: 6px;
     display: flex;
-
     &--right {
       justify-content: flex-end;
     }
-
     &--left {
       justify-content: flex-start;
     }
   }
-
   &__scroll {
     width: 50%;
     height: 6px;
@@ -90,13 +76,9 @@
     cursor: pointer;
   }
 }
-
-
 @media (min-width: @screen-tablet) {
-  .slider {    
-    
+  .slider {
     margin: 0;
-
     &__wrap {
       margin-top: -170px;
       width: 100%;
@@ -105,29 +87,24 @@
       left: 0;
       background-color: @bg--lightgrey;
     }
-
     &__list {
       margin-bottom: 12px;
     }
-
     &__toggles {
       width: 570px;
       margin-bottom: 66px;
     }
-
     &__toggle {
       padding-top: 7px;
       padding-bottom: 7px;
       font-size: 20px;
       line-height: 20px;
-      border-bottom: 1px dashed #bebebe;      
+      border-bottom: 1px dashed #bebebe;
     }
-
     &__range {
       width: auto;
       position: relative;
     }
-
     &__scale {
       width: 430px;
       height: 6px;
@@ -137,7 +114,6 @@
       border-radius: 3px;
       display: flex;
     }
-
     &__scroll {
       width: 34px;
       height: 34px;
@@ -147,10 +123,8 @@
       background-color: @white;
       position: relative;
       margin-top: -14px;
-
       &::after {
         content: "";
-
         position: absolute;
         width: 8px;
         height: 8px;
@@ -176,29 +150,22 @@
     }
   }
 }
-
-
 @media (min-width:@screen-desktop) {
-  .slider {   
-    
+  .slider {
     margin: 0;
-
     &__wrap {
       margin-top: -170px;
       width: auto;
       position: static;
       background-color: transparent;
     }
-
     &__list {
       margin-bottom: 40px; // Проверить через пиксель
     }
-
     &__toggles {
       width: 570px;
       margin-bottom: 0;
     }
-
     &__toggle {
       padding-top: 7px;
       padding-bottom: 7px;

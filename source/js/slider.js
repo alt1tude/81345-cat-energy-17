@@ -7,9 +7,8 @@ var image_before = document.querySelector(".slider__image--before");
   scale_move.classList.remove("slider__scale--right");
   scale_move.classList.add("slider__scale--left");
   image_after.classList.remove("slider__image--active");
-  image_before.classList.add("slider__image--active");  
+  image_before.classList.add("slider__image--active");
 });
-
 var btn_after = document.querySelector(".slider_toggle-after");
 var scale_move = document.querySelector(".slider__scale");
 var image_before = document.querySelector(".slider__image--before");

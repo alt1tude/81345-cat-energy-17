@@ -1,13 +1,9 @@
 .main-nav {
   position: relative;
 }
-
 .main-nav__wrap {
-  // position: relative;
-  // z-index: 1;
   overflow: hidden;
 }
-
 .main-nav__toggle {
   position: absolute;
   top: -44px;
@@ -16,34 +12,28 @@
   height: 42px;
   border: none;
   background: none;
-
   &-icon {
     fill: #000000;
   }
- 
   &:hover + .main-nav__wrap .main-nav__list {
-    height: 213px;
+    height: 208px;
     transform: translateY(0);
   }
 }
-
 @media (min-width: @screen-tablet) {
   .main-nav__wrap {
     margin: 0;
     overflow: visible;
   }
-
   .main-nav__toggle {
     display: none;
   }
 }
-
 @media (min-width: @screen-desktop) {
   .main-nav__wrap {
     margin: 0;
     overflow: visible;
   }
-
   .main-nav__toggle {
     display: none;
   }

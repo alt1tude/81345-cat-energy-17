@@ -3,7 +3,6 @@
   margin-bottom: 17px;
   padding-left: 20px;
   padding-right: 20px;
-
   &__list {
     list-style: none;
     margin: 0;
@@ -20,7 +19,6 @@
   }
   &__list::before {
     content: "";
-
     position: absolute;
     width: 50px;
     height: 50px;
@@ -31,7 +29,6 @@
   }
   &__list--slim::after {
     content: "";
-
     position: absolute;
     width: 35px;
     height: 49px;
@@ -43,7 +40,6 @@
   }
   &__list--pro::after {
     content: "";
-
     position: absolute;
     width: 67px;
     height: 28px;
@@ -63,12 +59,10 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
-
     &--pro {
       padding-left: 40px;
-    }    
+    }
   }
-
   &__item-text {
     color: @text--darkgrey;
     font-family: "Arial", sans-serif;
@@ -82,10 +76,9 @@
   }
   &__item-link {
     position: relative;
-  }  
+  }
   &__item-link::before {
     content: "";
-
     position: absolute;
     width: 24px;
     height: 11px;
@@ -93,7 +86,7 @@
     left: 95px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;    
+    background-position: 0 0;
   }
   &__item-link:hover::before,
   &__item-link:focus::before {
@@ -122,13 +115,11 @@
     }
   }
 }
-
 @media (min-width: @screen-tablet) {
   .catigories {
     margin-top: 0;
     padding-left: 30px;
     padding-right: 30px;
-
     &__list {
       margin-bottom: 30px;
       padding-top: 80px;
@@ -164,7 +155,7 @@
       margin-bottom: 26px;
       &--pro {
         padding: 0;
-      }         
+      }
     }
     &__item-text {
       font-size: @font-size--base;
@@ -182,9 +173,7 @@
       left: 124px;
     }
   }
-
 }
-
 @media (min-width:@screen-desktop) {
   .catigories {
     max-width: 1300px;
@@ -192,11 +181,10 @@
     padding-right: 40px;
     display: flex;
     justify-content: space-between;
-
     &__list {
     list-style: none;
     margin: 0;
-    padding-right: 56px;    
+    padding-right: 56px;
     width: 570px;
     }
     &__list::before {
@@ -221,12 +209,10 @@
       text-align: center;
       margin-bottom: 74px;
       padding: 0;
-
       &--pro {
         padding-left: 84px;
       }
     }
-   
     &__item-text {
       font-size: @font-size--base;
       line-height: @line-height--base;
@@ -242,5 +228,4 @@
       padding-left: 40px;
     }
   }
-
 }
