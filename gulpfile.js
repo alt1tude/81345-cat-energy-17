@@ -72,7 +72,7 @@ gulp.task("minify_js", function () {
   .pipe(uglify())
   .pipe(rename({
   suffix: ".min"
-    }))  
+    }))
   .pipe(gulp.dest("build/js"));
 });
 
