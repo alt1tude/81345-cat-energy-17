@@ -5,11 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.js" async=""></script>
 </head>
 
 <body class="index-bg">
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
@@ -21,9 +25,9 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <svg class="main-nav__toggle-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
-          <rect y="16" width="24" height="2" />
-          <rect y="8" width="24" height="2" />
-          <rect width="24" height="2" />
+          <rect y="16" width="24" height="2"></rect>
+          <rect y="8" width="24" height="2"></rect>
+          <rect width="24" height="2"></rect>
         </svg><span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrap">
@@ -148,7 +152,7 @@
           <p class="map-info__contacts">ул. Большая Конюшенная, д. 19/8 <span class="map-info__city">Санкт-Петербург</span></p>
         </div>
         <div class="address-map__container">
-          <iframe class="address-map__container-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003426!2d30.320858716506077!3d59.93871916905364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564242302315!5m2!1sru!2sru" allowfullscreen></iframe>
+          <iframe class="address-map__container-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003426!2d30.320858716506077!3d59.93871916905364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564242302315!5m2!1sru!2sru" allowfullscreen=""></iframe>
         </div>
       </section>
     </div>
@@ -162,7 +166,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link-vk" href="https://vk.com/htmlacademy" aria-label="Мы в Vkontakte" target="_blank">
-              <svg class="social__link-vk-icon" width="22" height="12">
+              <svg class="social__icon-vk" width="22" height="12">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
               <span class="visually-hidden">Мы в Вконтакте</span>
@@ -170,7 +174,7 @@
           </li>
           <li class="social__item">
             <a class="social__link-insta" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Instagramm" target="_blank">
-              <svg class="social__link-insta-icon" width="16" height="16">
+              <svg class="social__icon-insta" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
               <span class="visually-hidden">Мы в Инстаграмме</span>
@@ -178,7 +182,7 @@
           </li>
           <li class="social__item">
             <a class="social__link-fb" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Facebook" target="_blank">
-              <svg class="social__link-fb-icon" width="10" height="19">
+              <svg class="social__icon-fb" width="10" height="19">
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
               <span class="visually-hidden">МЫ в Фейсбуке</span>
@@ -189,7 +193,7 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">HTML Academy</p>
         <a class="copyright__link-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип «HTML Academy»" target="_blank">
-          <svg class="copyright__link-htmlacademy-icon" width="27" height="34">
+          <svg class="copyright__icon-htmlacademy" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy</span>
