@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+
   &__title {
     color: @black;
     font-family: @font-family--base;
@@ -14,6 +15,7 @@
     padding-top: 30px;
     padding-bottom: 32px;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -24,15 +26,18 @@
       background-color: @green;
     }
   }
+
   &__catalog {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   &__item {
     border-top: 1px solid #cdcdcd;
     padding-top: 15px;
   }
+
   &__item-title {
     color: @black;
     font-family: @font-family--base;
@@ -45,18 +50,22 @@
     margin-bottom: 16px;
     padding: 0;
   }
+
   &__item:last-child {
     border-bottom: 1px solid #cdcdcd;
     margin-bottom: 40px;
   }
+
   &__description {
     width: 100%;
     margin-bottom: 14px;
+
     & tr {
       display: flex;
       justify-content: space-between;
     }
   }
+
   &__field,
   &__value {
     color: @black;
@@ -68,11 +77,13 @@
     margin: 0;
     padding: 0;
   }
+
   &__order {
     margin-bottom: 17px;
     padding-top: 11px;
     padding-bottom: 11px;
   }
+
   &__order-gift {
     display: block;
     min-height: 289px;
@@ -80,9 +91,9 @@
     position: relative;
     background-color: #68b738;
     background-image: url("../img/gift-photo-mobile@1x.jpg");
-    background-image: url("../img/gift-photo-mobile@1x.webp");
     background-repeat: no-repeat;
     background-position: 0 0;
+
     &::before {
       content: "";
       position: absolute;
@@ -94,12 +105,14 @@
       background-repeat: no-repeat;
       background-position: 0 0;
     }
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-mobile@2x.jpg");
-      background-image: url("../img/gift-photo-mobile@2x.webp");
       background-size: 100% auto;
     }
   }
+
   &__order-text {
     color: @white;
     font-family: "Arial", sans-serif;
@@ -113,11 +126,13 @@
     padding-top: 200px;
   }
 }
+
 @media (min-width: @screen-tablet) {
   .additionally {
     margin-top: -70px;
     padding-left: 0;
     padding-right: 0;
+
     &__title {
       font-size: @font-size--h2mobile;
       line-height: @line-height--h2mobile;
@@ -125,11 +140,13 @@
       padding-top: 0;
       padding-bottom: 0;
       padding-left: 70px;
+
       &::before {
         width: 42%;
         top: 50%;
         right: 0;
       }
+
       &::after {
         content: "";
 
@@ -141,10 +158,12 @@
         background-color: @green;
       }
     }
+
     &__catalog {
       padding-left: 30px;
       padding-right: 30px;
     }
+
     &__item {
       padding-top: 28px;
       padding-left: 40px;
@@ -153,39 +172,47 @@
       border-left: 1px solid @bg--lightgrey;
       border-right: 1px solid @bg--lightgrey;
     }
+
     &__item:last-child {
       margin-bottom: 70px;
     }
+
     &__description {
       width: 232px;
       margin-bottom: 0;
+
       & tr {
         justify-content: flex-end;
       }
     }
+
     &__field,
     &__value {
       font-size: @font-size--base;
       line-height: 20px;
     }
+
     &__field {
       margin-right: 52px;
     }
+
     &__item-wrap {
       display: flex;
       justify-content: space-between;
       margin-bottom: 24px;
     }
+
     &__item-title {
       margin-bottom: 0;
     }
+
     &__order {
       margin: 0;
     }
+
     &__order-gift {
       min-height: 200px;
       background-image: url("../img/gift-photo-tablet@1x.jpg");
-      background-image: url("../img/gift-photo-tablet@1x.webp");
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: cover;
@@ -194,15 +221,18 @@
       text-align: center;
       padding-top: 62px;
       padding-left: 330px;
+
       &::before {
         top: 65px;
         left: 90px;
       }
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+
+      @media (min-resolution: @retina-dpi),
+        (min-resolution: @retina-dppx) {
         background-image: url("../img/gift-photo-tablet@2x.jpg");
-        background-image: url("../img/gift-photo-tablet@2x.webp");
       }
     }
+
     &__order-text {
       display: inline-block;
       padding: 0;
@@ -212,30 +242,37 @@
     }
   }
 }
-@media (min-width:@screen-desktop) {
+
+@media (min-width: @screen-desktop) {
   .additionally {
     max-width: 1300px;
     margin-top: -60px;
     margin-bottom: 86px;
+
     &__title {
       padding-left: 40px;
+
       &::before {
         width: 67%;
         top: 50%;
       }
+
       &::after {
         display: none;
       }
     }
+
     &__wrap {
       padding-left: 40px;
       padding-right: 40px;
       display: flex;
       justify-content: space-between;
     }
+
     &__catalog {
       padding: 0;
     }
+
     &__item {
       width: 896px;
       padding-top: 15px;
@@ -248,9 +285,11 @@
       justify-content: space-between;
       align-items: center;
     }
+
     &__item:last-child {
       margin-bottom: 0;
     }
+
     &__item-title {
       font-family: @font-family--base;
       font-size: 20px;
@@ -258,42 +297,50 @@
       padding: 0;
       margin: 0;
     }
+
     &__description {
       width: 285px;
       margin-bottom: 0;
+
       & tr {
         justify-content: space-between;
       }
     }
+
     &__field {
       margin: 0;
     }
+
     &__item-wrap {
       width: 650px;
       margin: 0;
       padding-right: 40px;
     }
+
     &__order {
       width: 245px;
     }
+
     &__order-gift {
       width: 245px;
       min-height: 289px;
       background-image: url("../img/gift-photo-desktop@1x.jpg");
-      background-image: url("../img/gift-photo-desktop@1x.webp");
       background-repeat: no-repeat;
       background-position: 0 0;
       margin: 0;
       padding-top: 192px;
       padding-left: 0;
+
       &::before {
         left: 96px;
       }
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+
+      @media (min-resolution: @retina-dpi),
+        (min-resolution: @retina-dppx) {
         background-image: url("../img/gift-photo-desktop@2x.jpg");
-        background-image: url("../img/gift-photo-desktop@2x.webp");
       }
     }
+
     &__order-text {
       text-align: center;
     }

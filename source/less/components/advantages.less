@@ -3,6 +3,7 @@
   margin-bottom: 46px;
   padding-left: 20px;
   padding-right: 20px;
+
   &__title {
     color: @black;
     font-family: @font-family--base;
@@ -14,20 +15,24 @@
     margin-bottom: 25px;
     padding: 0;
   }
+
   &__item {
-    margin-bottom: 20px;  //Двигает .example
+    margin-bottom: 20px; //Двигает .example
     padding-top: 6px;
     padding-left: 80px;
     position: relative;
   }
+
   &__item:last-child {
     margin-bottom: 0; //Убрано для .example
   }
+
   &__list {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   &__description {
     font-family: "Arial", sans-serif;
     font-style: normal;
@@ -37,6 +42,7 @@
     margin: 0;
     padding: 0;
     position: relative;
+
     &::before {
       content: "";
 
@@ -47,6 +53,7 @@
       left: -80px;
       background-color: @green;
     }
+
     &::after {
       content: "";
 
@@ -56,71 +63,75 @@
       top: 2px;
       left: -75px;
     }
+
     &--vitamins::after {
       background-image: url("../img/advantage-leaf@1x.png");
-      background-image: url("../img/advantage-leaf@1x.webp");
       background-repeat: no-repeat;
       background-position: 0 0;
+
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/advantage-leaf@2x.png");
-        background-image: url("../img/advantage-leaf@2x.webp");
         background-size: 100% auto;
       }
     }
+
     &--powder::after {
       background-image: url("../img/advantage-powder@1x.png");
-      background-image: url("../img/advantage-powder@1x.webp");
       background-repeat: no-repeat;
       background-position: 0 0;
+
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/advantage-powder@2x.png");
-        background-image: url("../img/advantage-powder@2x.webp");
         background-size: 100% auto;
       }
     }
+
     &--dining::after {
       background-image: url("../img/advantage-dining@1x.png");
-      background-image: url("../img/advantage-dining@1x.webp");
       background-repeat: no-repeat;
       background-position: 0 0;
+
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/advantage-dining@2x.png");
-        background-image: url("../img/advantage-dining@2x.webp");
         background-size: 100% auto;
       }
     }
+
     &--clock::after {
       background-image: url("../img/advantage-clock@1x.png");
-      background-image: url("../img/advantage-clock@1x.webp");
       background-repeat: no-repeat;
       background-position: 0 0;
+
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/advantage-clock@2x.png");
-        background-image: url("../img/advantage-clock@2x.webp");
         background-size: 100% auto;
       }
     }
   }
 }
+
 @media (min-width: @screen-tablet) {
   .advantages {
-    margin-bottom: 50px; // Проверить через пиксель
+    margin-bottom: 50px;
     padding-top: 43px;
     padding-right: 30px;
     padding-bottom: 54px;
     padding-left: 30px;
     border-bottom: 1px solid #e6e6e6;
+
     &__title {
       font-size: @font-size--h2base;
       line-height: @line-height--h2base;
       margin-bottom: 72px;
     }
+
     &__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       counter-reset: myCounter;
     }
+
     &__item {
       width: 46%;
       margin-bottom: 90px;
@@ -129,10 +140,12 @@
       padding-top: 118px;
       padding-bottom: 48px;
     }
+
     &__item:nth-child(3),
     &__item:nth-child(4) {
       margin-bottom: 0;
     }
+
     &__item::before {
       content: counter(myCounter);
       counter-increment: myCounter;
@@ -143,15 +156,18 @@
       line-height: 280px;
       color: @bg--lightgrey;
     }
+
     &__description {
       font-size: @font-size--base;
       line-height: @line-height--base;
+
       &::before {
         width: 80px;
         height: 80px;
         top: -116px;
         left: 0;
       }
+
       &::after {
         width: 50px;
         height: 50px;
@@ -161,7 +177,8 @@
     }
   }
 }
-@media (min-width:@screen-desktop) {
+
+@media (min-width: @screen-desktop) {
   .advantages {
     margin-bottom: 196px;
     padding-left: 40px;
@@ -169,12 +186,14 @@
     padding-bottom: 0;
     max-width: 1300px;
     border-bottom: none;
+
     &__item {
       width: 285px;
       margin-bottom: 0;
       padding-right: 40px;
       padding-bottom: 50px;
     }
+
     &__item::before {
       top: -36px;
       left: 124px;

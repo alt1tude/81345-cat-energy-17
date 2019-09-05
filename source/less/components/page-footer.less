@@ -5,6 +5,7 @@
   padding-right: 20px;
   padding-top: 40px;
   background-color: @bg--lightgrey;
+
   &__logo {
     display: block;
     text-align: center;
@@ -14,11 +15,13 @@
     &:focus {
       opacity: 0.8;
     }
+
     &:active {
       opacity: 0.6;
     }
   }
 }
+
 @media (min-width: @screen-tablet) {
   .page-footer {
     width: auto;
@@ -27,21 +30,25 @@
     padding-bottom: 62px;
     padding-left: 30px;
     background-color: @bg--lightgrey;
+
     &__wrap {
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
     &__logo {
       margin-bottom: 0;
     }
   }
 }
-@media (min-width:@screen-desktop) {
+
+@media (min-width: @screen-desktop) {
   .page-footer {
     padding-left: 40px;
     padding-right: 40px;
+
     &__wrap {
       max-width: 1300px;
     }

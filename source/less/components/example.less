@@ -3,6 +3,7 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: @bg--lightgrey;
+
   &__title {
     color: @black;
     font-family: @font-family--base;
@@ -14,6 +15,7 @@
     margin-bottom: 25px;
     padding: 0;
   }
+
   &__description {
     font-family: "Arial", sans-serif;
     font-style: normal;
@@ -24,13 +26,16 @@
     margin-bottom: 24px;
     padding: 0;
   }
+
   &__fields {
     margin-bottom: 46px;
+
     &__wrap {
       display: flex;
       justify-content: space-between;
     }
   }
+
   &__field {
     width: 124px;
     margin-bottom: 34px;
@@ -41,6 +46,7 @@
     text-align: center;
     vertical-align: middle;
     position: relative;
+
     &-weight,
     &-time {
       color: @black;
@@ -53,6 +59,7 @@
       margin: 0;
       padding: 0;
     }
+
     &-text {
       font-family: "Arial", sans-serif;
       font-style: normal;
@@ -68,6 +75,7 @@
       background-color: @bg--lightgrey;
     }
   }
+
   &__price {
     color: @black;
     font-family: @font-family--base;
@@ -81,6 +89,7 @@
     padding: 0;
   }
 }
+
 @media (min-width: @screen-tablet) {
   .example {
     padding-left: 30px;
@@ -88,35 +97,42 @@
     padding-bottom: 666px;
     position: relative;
     background-color: @white;
+
     &__title {
       font-size: @font-size--h2base;
       line-height: @line-height--h2base;
       margin-bottom: 60px;
     }
+
     &__description {
       font-size: @font-size--base;
       line-height: @line-height--base;
       margin-bottom: 56px;
     }
+
     &__fields {
       margin-bottom: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       &__wrap {
         width: 368px;
       }
     }
+
     &__field {
       width: 162px;
       margin: 0;
       padding-top: 22px;
       padding-bottom: 22px;
+
       &-weight,
       &-time {
         font-size: 30px;
         line-height: 37px;
       }
+
       &-text {
         font-size: 14px;
         line-height: 14px;
@@ -126,10 +142,12 @@
         background-color: @white;
       }
     }
+
     &__field:last-child p:last-child {
       max-width: 130px;
       left: 16px;
     }
+
     &__price {
       width: 180px;
       font-size: 20px;
@@ -138,27 +156,32 @@
     }
   }
 }
-@media (min-width:@screen-desktop) {
+
+@media (min-width: @screen-desktop) {
   .example {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 68px;
     background-color: @bg--lightgrey;
+
     &__wrap {
       max-width: 1300px;
       margin: 0 auto;
       padding-left: 40px;
       padding-right: 40px;
       display: flex;
+
       &__info {
         width: 610px;
-        margin-top: -142px; // Проверить через пиксель
+        margin-top: -142px;
         padding-right: 150px;
       }
     }
+
     &__title {
-      margin-bottom: 140px; // Проверить через пиксель
+      margin-bottom: 140px;
     }
+
     &__description {
       font-size: @font-size--base;
       line-height: @line-height--base;
@@ -166,23 +189,28 @@
       margin-bottom: 70px;
       padding: 0;
     }
+
     &__fields {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+
       &__wrap {
         width: 368px;
         margin-bottom: 60px;
       }
     }
+
     &__field-text {
       background-color: @bg--lightgrey;
     }
+
     &__price {
       width: auto;
       font-size: 20px;
       line-height: 20px;
       text-align: left;
+
       &-value {
         margin-left: 64px;
       }

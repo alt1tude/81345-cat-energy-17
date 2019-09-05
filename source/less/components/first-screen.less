@@ -1,20 +1,21 @@
 .first-screen {
   margin: 0 auto;
-  margin-bottom: 20px;  //Двигает .catigories
+  margin-bottom: 20px; //Двигает .catigories
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 28px;
+
   &--cat {
     background-image: url("../img/index-background-mobile@1x.jpg");
-    background-image: url("../img/index-background-mobile@1x.webp");
     background-repeat: no-repeat;
     background-position: 0 0;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
-      background-image: url("../img/index-background-mobile@2x.webp");
       background-size: 100% auto;
     }
   }
+
   &__description {
     color: @white;
     font-family: @font-family--base;
@@ -27,6 +28,7 @@
     margin-bottom: 23px;
     padding: 0;
   }
+
   &__slogan {
     color: @white;
     font-family: @font-family--base;
@@ -40,28 +42,33 @@
     margin-bottom: 31px;
     padding: 0;
   }
+
   &__form-link {
     font-size: 14px;
-    line-height:@line-height--mobile;
+    line-height: @line-height--mobile;
     width: 280px;
     margin: 0;
     padding-top: 12px;
     padding-bottom: 13px;
   }
 }
+
 .main-image__image-chicken {
   display: block;
   margin: 0 auto;
 }
+
 @media (min-width: @screen-tablet) {
   .first-screen {
     padding-top: 43px;
     padding-left: 120px;
     position: relative;
     margin-bottom: 0;
+
     &--cat {
       background-image: none;
     }
+
     &__description {
       color: @black;
       font-size: @font-size--h2base;
@@ -70,16 +77,19 @@
       margin-bottom: 40px;
       width: 420px;
     }
+
     &__slogan {
       color: @black;
       font-size: 20px;
       line-height: 20px;
       text-align: left;
     }
+
     .main-image__image-chicken {
       width: 709px;
       margin-left: -54px;
     }
+
     &__form-link {
       font-size: 20px;
       line-height: 20px;
@@ -91,19 +101,22 @@
     }
   }
 }
-@media (min-width:@screen-desktop) {
+
+@media (min-width: @screen-desktop) {
   .first-screen {
     max-width: 1300px;
     padding-top: 95px;
     padding-right: 40px;
     padding-left: 115px;
     padding-bottom: 344px;
+
     .main-image__image-chicken {
       width: 552px;
       margin-left: 366px;
       position: absolute;
       top: 16px;
     }
+
     &__form-link {
       font-size: 20px;
       line-height: 20px;

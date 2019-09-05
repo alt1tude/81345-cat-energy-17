@@ -7,23 +7,27 @@
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswaldmedium.woff") format("woff"),
     local("Oswald-Medium");
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-display: swap;
 }
+
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
 body {
   min-width: @screen-mobile;
   margin: 0;
@@ -36,14 +40,17 @@ body {
   background-color: @white;
   color: @text--darkgrey;
 }
+
 a {
   text-decoration: none;
   color: @text--darkgrey;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
